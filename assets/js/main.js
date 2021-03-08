@@ -11,7 +11,7 @@ showPoke.addEventListener("click", showPokemon)
 function showPokemon() {
     fetch(`https://pokeapi.co/api/v2/pokemon/${pokeName.value}`)
         .then(response => response.json())
-        .then(json => console.log(json.sprites.other))
+        .then(json => console.log(json.sprites.other["official-artwork"].front_default))
 }
 
 function fetchKantoPokemon(){
