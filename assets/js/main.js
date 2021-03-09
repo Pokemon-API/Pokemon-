@@ -6,6 +6,7 @@ const colorPika = document.getElementById("color_pika")
 const elementPika = document.getElementById("element_pika")
 const expPika = document.getElementById("exp_pika")
 const stats = document.getElementById("stats")
+const card = document.getElementById("card")
 
 
 showPoke.addEventListener("click", showPokemon)
@@ -81,14 +82,26 @@ function showPokemon() {
                 elementPika.innerHTML += elementsList[i].type.name + "/"
                 if (elementsList[0].type.name == "electric") {
                     elementPika.style.color = "yellow"
+                    card.style.backgroundColor = "#FFBF00"
                 } else if (elementsList[0].type.name == "grass") {
-                    elementPika.style.color = "green"
+                    elementPika.style.color = "green"  
+                    card.style.backgroundColor = "#09BC8A"
+
                 } else if (elementsList[0].type.name == "fire") {
                     elementPika.style.color = "red"
+                    card.style.backgroundColor = "#FF8484"
+
                 } else if (elementsList[0].type.name == "water") {
                     elementPika.style.color = "darkblue"
-                } else if (elementsList[0].type.name == "normal") {
-                    elementPika.style.color = "#333"
+                    card.style.backgroundColor = "#2374AB"
+
+                } else if (elementsList[0].type.name == "ground") {
+                    elementPika.style.color = "white"
+                    card.style.backgroundColor = "brown"
+                } else {
+                    card.style.backgroundColor = "#999"
+                    elementPika.style.color = "black"
+
                 }
             }
 
