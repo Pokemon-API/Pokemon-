@@ -48,19 +48,25 @@ function showPokemon() {
                 elementPika.innerHTML += elementsList[i].type.name + "/"
                 if (elementsList[0].type.name == "electric") {
                     card.style.backgroundColor = "#FFBF00"
+                    card.style.color = "black"
                 } else if (elementsList[0].type.name == "grass") {
                     card.style.backgroundColor = "#09BC8A"
+                    card.style.color = "black"
 
                 } else if (elementsList[0].type.name == "fire") {
                     card.style.backgroundColor = "#FF8484"
+                    card.style.color = "black"
 
                 } else if (elementsList[0].type.name == "water") {
                     card.style.backgroundColor = "#2374AB"
+                    card.style.color = "white"
 
                 } else if (elementsList[0].type.name == "ground") {
-                    card.style.backgroundColor = "brown"
+                    card.style.backgroundColor = "#654236"
+                    card.style.color = "white"
                 } else {
                     card.style.backgroundColor = "#D1CAA1"
+                    card.style.color = "black"
                 }
             }
             expPika.innerHTML = "Exp: " + json.base_experience
