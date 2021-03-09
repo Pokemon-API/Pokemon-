@@ -29,7 +29,7 @@ body {
     background: #f4f4f4;
     color: black;
     margin-right: 5px;
-    width: 500px;
+    width: 50vw;
     border: solid 2px transparent;
     transition: .2s;
     padding-left: 15px;
@@ -96,7 +96,6 @@ body {
 
 #card {
     width: 30vw;
-    min-height: 80vh;
     display: none;
     flex-direction: column;
     justify-content: flex-start;
@@ -143,6 +142,6 @@ img {
 }
 
 #stats {
-    margin-top: 5%;
+    margin: 5% 0;
     font-size: 24px;
 }

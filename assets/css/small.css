@@ -1,0 +1,61 @@
+#wrapper {
+    display: flex;
+    align-items: center;
+}
+
+#wrapper_search {
+    display: block;
+    text-align: center;
+    width: 100%;
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 5%;
+}
+
+#pokemon-name {
+    transition: .2s;
+    font-size: 16px;
+    width: 60%;
+}
+
+#showPoke {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    width: 30%;
+    margin: auto;
+    margin-top: 5%;
+}
+
+#showPoke>p {
+    font-size: 14px;
+}
+
+#ball {
+    height: 20px;
+    width: 20px;
+    border: solid 2px rgb(27, 27, 27);
+    transition: .5s;
+}
+
+#card {
+    width: 60vw !important;
+    border-width: 5px;
+}
+
+#hw {
+    font-size: 14px;
+}
+
+#element_pika {
+    font-size: 14px;
+}
+
+#name {
+    font-size: 24px !important;
+}
+
+#stats {
+    font-size: 18px !important;
+}
