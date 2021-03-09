@@ -99,7 +99,7 @@ function showPokemon() {
                     elementPika.style.color = "white"
                     card.style.backgroundColor = "brown"
                 } else {
-                    card.style.backgroundColor = "#999"
+                    card.style.backgroundColor = "#D1CAA1"
                     elementPika.style.color = "black"
 
                 }
