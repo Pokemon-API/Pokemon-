@@ -7,6 +7,8 @@ const elementPika = document.getElementById("element_pika")
 const expPika = document.getElementById("exp_pika")
 const stats = document.getElementById("stats")
 const card = document.getElementById("card")
+const heightPika = document.getElementById("height_pika")
+const weightPika = document.getElementById("weight_pika")
 
 
 showPoke.addEventListener("click", showPokemon)
@@ -62,7 +64,8 @@ function showPokemon() {
             console.log("weight: " + (json.weight / 10) + " kg")
             console.log("height: " + (json.height * 10) + " cm")
 
-
+            heightPika.innerHTML = "height: " + (json.height * 10) + " cm"
+            weightPika.innerHTML = "weight: " + (json.weight / 10) + " kg"
 
 
             let hp_pok = json.stats[0].base_stat
@@ -104,6 +107,7 @@ function showPokemon() {
 
                 }
             }
+
 
             expPika.innerHTML = "Exp : " + json.base_experience
             stats.innerHTML = "Hp: " + hp_pok + " / Atk: " + attack_pok + " / Def: " + defence_pok
