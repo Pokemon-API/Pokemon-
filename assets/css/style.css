@@ -97,25 +97,52 @@ body {
 #card {
     width: 30vw;
     min-height: 80vh;
-    display: flex;
+    display: none;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
     background-color: white;
     border-radius: 5px;
+    border: 10px solid rgba(0, 0, 0, .2)
 }
 
 #name {
-    margin: 2% 0;
+    margin: 2% 0 0 0;
     font-size: 36px;
 }
 
 #pokeimg {
-    background: grey;
+    background: rgba(0, 0, 0, .2);
     width: 80%;
     height: auto;
+    border-radius: 5px;
 }
 
 img {
     width: 100%;
+}
+
+#hw {
+    display: flex;
+    width: 100%;
+    margin-bottom: 1%;
+    justify-content: space-around;
+}
+
+#element_pika {
+    font-size: 18px;
+}
+
+#exp_pika {
+    margin-top: 5%;
+    font-size: 24px;
+    background: rgba(0, 0, 0, .2);
+    padding: 5%;
+    border-radius: 5px;
+    color: white;
+}
+
+#stats {
+    margin-top: 5%;
+    font-size: 24px;
 }

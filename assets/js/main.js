@@ -13,7 +13,7 @@ const weightPika = document.getElementById("weight_pika")
 showPoke.addEventListener("click", showPokemon)
 
 pokeName.addEventListener("keypress", function(e) {
-    if(e.key === "Enter"){
+    if (e.key === "Enter") {
         e.preventDefault()
         showPokemon()
     }
@@ -30,7 +30,7 @@ function showPokemon() {
             // for (let i = 0; i < abilitiesCount.length; i++) {
             //     console.log("ability1: " + json.abilities[i].ability.name)
             // }
-
+            card.style.display = "flex";
             heightPika.innerHTML = "height: " + (json.height * 10) + " cm"
             weightPika.innerHTML = "weight: " + (json.weight / 10) + " kg"
 
@@ -63,12 +63,7 @@ function showPokemon() {
                     card.style.backgroundColor = "#D1CAA1"
                 }
             }
-            expPika.innerHTML = "Exp : " + json.base_experience
+            expPika.innerHTML = "Exp: " + json.base_experience
             stats.innerHTML = "Hp: " + hp_pok + " / Atk: " + attack_pok + " / Def: " + defence_pok
         })
 }
-
-
-
-
-
