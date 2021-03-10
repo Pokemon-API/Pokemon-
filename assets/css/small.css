@@ -1,3 +1,15 @@
+header {
+    font-size: 24px;
+}
+
+.searched {
+    font-size: 14px;
+    bottom: 0;
+    top: unset;
+    left: 50%;
+    transform: translate(-50%);
+}
+
 #wrapper {
     display: flex;
     align-items: center;
