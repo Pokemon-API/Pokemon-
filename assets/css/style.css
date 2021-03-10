@@ -37,7 +37,7 @@ header {
     top: 5px;
 }
 
-h1>span {
+h1>a>span {
     color: #F8C045;
 }
 
