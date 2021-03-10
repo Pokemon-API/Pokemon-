@@ -9,6 +9,7 @@ const stats = document.getElementById("stats")
 const card = document.getElementById("card")
 const heightPika = document.getElementById("height_pika")
 const weightPika = document.getElementById("weight_pika")
+const header = document.getElementById("header")
 
 showPoke.addEventListener("click", showPokemon)
 
@@ -49,24 +50,36 @@ function showPokemon() {
                 if (elementsList[0].type.name == "electric") {
                     card.style.backgroundColor = "#FFBF00"
                     card.style.color = "black"
+                    header.classList.remove("searched")
+                    header.classList.add("searched")
                 } else if (elementsList[0].type.name == "grass") {
                     card.style.backgroundColor = "#09BC8A"
                     card.style.color = "black"
+                    header.classList.remove("searched")
+                    header.classList.add("searched")
 
                 } else if (elementsList[0].type.name == "fire") {
                     card.style.backgroundColor = "#FF8484"
                     card.style.color = "black"
+                    header.classList.remove("searched")
+                    header.classList.add("searched")
 
                 } else if (elementsList[0].type.name == "water") {
                     card.style.backgroundColor = "#2374AB"
                     card.style.color = "white"
+                    header.classList.remove("searched")
+                    header.classList.add("searched")
 
                 } else if (elementsList[0].type.name == "ground") {
                     card.style.backgroundColor = "#654236"
                     card.style.color = "white"
+                    header.classList.remove("searched")
+                    header.classList.add("searched")
                 } else {
                     card.style.backgroundColor = "#D1CAA1"
                     card.style.color = "black"
+                    header.classList.remove("searched")
+                    header.classList.add("searched")
                 }
             }
             expPika.innerHTML = "Exp: " + json.base_experience

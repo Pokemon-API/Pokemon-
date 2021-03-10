@@ -16,6 +16,37 @@ body {
     background-blend-mode: overlay;
 }
 
+header {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 40vh;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.searched {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    font-size: 20px;
+    position: absolute;
+    left: 25px;
+    top: 5px;
+}
+
+h1>span {
+    color: #F8C045;
+}
+
+h1 a {
+    all: unset;
+    color: inherit;
+    cursor: pointer;
+}
+
 #wrapper_search {
     display: flex;
     align-items: center;
@@ -38,8 +69,9 @@ body {
 
 #pokemon-name:focus {
     outline: none;
-    border: solid 2px #2C6615;
+    border: solid 2px #F8C045;
     transition: .2s;
+    background: white;
 }
 
 #pokemon-name::placeholder {
@@ -53,7 +85,7 @@ body {
     align-items: center;
     cursor: pointer;
     height: 50px;
-    background: rgba(44, 102, 21);
+    background: #F8C045;
     padding: 0 5px;
     border-radius: 5px;
     border: 2px solid transparent;
@@ -61,14 +93,14 @@ body {
 }
 
 #showPoke:hover {
-    background: rgb(36, 85, 17);
+    background: #b68c32;
     transition: .2s;
 }
 
 #showPoke>p {
     padding: 5px;
     font-size: 24px;
-    color: white;
+    color: black;
 }
 
 #ball {
@@ -85,9 +117,29 @@ body {
     transform: rotate(45deg);
 }
 
+#random {
+    height: 50px;
+    background: rgba(44, 102, 21);
+    border: solid 2px white;
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    padding: 0 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 2%;
+    transition: .2s;
+}
+
+#random:hover {
+    border-color: rgb(36, 85, 17);
+    background: rgb(36, 85, 17);
+    transition: .2s;
+}
+
 #wrapper {
     width: 100vw;
-    height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
